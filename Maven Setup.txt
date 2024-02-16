@@ -1,0 +1,6 @@
+1. Create maven project
+2. Adding dependencies => spring core, spring context
+3. creation of beans - java pojo
+4. creation of configuration file => config.xml
+5. setter injection
+6. Main class : which can pull the object and use

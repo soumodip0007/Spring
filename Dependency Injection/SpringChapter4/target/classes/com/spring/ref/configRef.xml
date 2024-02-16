@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:context="http://www.springframework.org/schema/context"
+  xmlns:p="http://www.springframework.org/schema/p"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans
+  https://www.springframework.org/schema/beans/spring-beans.xsd
+  http://www.springframework.org/schema/context
+  http://www.springframework.org/schema/context/spring-context.xsd">
+  
+  <!-- Beans -->
+  <bean class="com.spring.ref.ReferenceTwo" name="bref">
+    <property name="b" value="80"/>
+  </bean>
+  
+  <bean class="com.spring.ref.ReferenceOne" name="aref" p:a="50" p:obj-ref="bref"/> <!-- ref as p schema -->
+  
+  <!--  <bean class="com.spring.ref.ReferenceOne" name="aref">  -->
+    <!-- <property name="a" value="70"/> --> <!-- ref as a element -->
+    
+    <!-- <property name="obj">
+      <ref bean="bref"/>
+    </property> --> <!-- ref as a attribute -->
+    
+    <!-- <property name="obj" ref="bref"/> -->
+  <!-- </bean> -->
+  
+</beans>

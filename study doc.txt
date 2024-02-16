@@ -1,0 +1,7 @@
+Spring Module
+
+1. Spring Core - Core, Beans, Context, Spring Expression Language
+2. Aspect Oriented Programming(AOP), Aspect, Instrumentation, Messaging
+3. Data access or integration - Java Database Connectivity(JDBC), Java Messaging Services(JMS), Object Relational Mapping(ORM), Object Xml Mapping(OXM)
+4. Web - Web, Servlet, Portlet, WebSocket
+5. Test

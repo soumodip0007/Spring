@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:context="http://www.springframework.org/schema/context"
+  xmlns:p="http://www.springframework.org/schema/p"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans
+  https://www.springframework.org/schema/beans/spring-beans.xsd
+  http://www.springframework.org/schema/context
+  http://www.springframework.org/schema/context/spring-context.xsd">
+  
+  
+  <!-- Beans -->
+  <bean class="com.spring.SpringChapter2.Employee" name="employeeOne">
+     <!-- Here we have used the value as an attribute -->
+     <property name="empId" value="1"/>
+     
+     <property name="empName" value="Mario"/>
+     
+     <property name="empSalary" value="50000"/>
+  </bean>
+  
+  <bean class="com.spring.SpringChapter2.Employee" name="employeeTwo">
+     <!-- Here we have used the value as an attribute -->
+     <property name="empId" value="2"/>
+     
+     <property name="empName" value="Luigi"/>
+     
+     <property name="empSalary" value="40000"/>
+  </bean>
+  
+  <bean class="com.spring.SpringChapter2.Employee" name="employeeThree">
+     <!-- Here we have used the value as an attribute -->
+     <property name="empId" value="3"/>
+     
+     <property name="empName" value="Shaun"/>
+     
+     <property name="empSalary" value="60000"/>
+  </bean>
+  
+  <!-- Using the p schema -->
+  <bean class="com.spring.SpringChapter2.Employee" name="employeeFour" p:empId="4" p:empName="MarioTwo" p:empSalary="30000"/>
+  
+  <bean class="com.spring.SpringChapter2.Employee" name="employeeFive" p:empId="5" p:empName="LuigiTwo" p:empSalary="20000"/>
+  
+  <bean class="com.spring.SpringChapter2.Employee" name="employeeSix" p:empId="6" p:empName="ShaunTwo" p:empSalary="50000"/>
+  
+</beans>

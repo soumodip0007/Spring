@@ -1,0 +1,5 @@
+1. Setter Injection
+2. Property injection using p Schema and using value as attribute
+3. Injection of collection - List, Set, Map, Properties
+4. Injection of reference type
+5. Solution of Ambiguity Problem using constructor injection
