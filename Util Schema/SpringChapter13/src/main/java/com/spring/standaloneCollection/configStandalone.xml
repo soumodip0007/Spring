@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:context="http://www.springframework.org/schema/context"
+  xmlns:p="http://www.springframework.org/schema/p"
+  xmlns:util="http://www.springframework.org/schema/util"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans
+  https://www.springframework.org/schema/beans/spring-beans.xsd
+  http://www.springframework.org/schema/context
+  http://www.springframework.org/schema/context/spring-context.xsd
+  http://www.springframework.org/schema/util
+  http://www.springframework.org/schema/util/spring-util.xsd
+  ">
+  
+  <!-- standalone list -->
+  
+  <util:list list-class="java.util.LinkedList" id="IndianArmy">
+  <!--  <util:list list-class="java.util.Vector" id="IndianArmy">  -->
+  <!--  <util:list list-class="java.util.ArrayList" id="IndianArmy">  -->
+      <value>Lieutenant general</value>
+      <value>Major general</value>
+      <value>Brigadier</value>
+  </util:list>
+  
+  <!-- standalone map -->
+  
+  <util:map map-class="java.util.HashMap" id="IndianCricketTeam">
+  <!--  <util:map map-class="java.util.TreeMap" id="IndianArmy">  -->
+      <entry key="Batsman" value="4"/>
+      <entry key="WicketKeeper" value="1"/>
+      <entry key="Bowler" value="4"/>
+      <entry key="AllRounder" value="2"/>
+  </util:map>
+  
+  <!-- standalone properties -->
+  
+  <util:properties id="jdbc_connection">
+     <prop key="driver">com.mysql.jdbc.Driver</prop>
+     <prop key="username">root</prop>
+     <prop key="password">test1234</prop>
+     <prop key="url">mysql:jdbc://localhost:3306/empDb</prop>
+  </util:properties>
+  
+    <bean class="com.spring.standaloneCollection.People" name="peopleOne">
+        <property name="army" ref="IndianArmy"/>
+        <property name="cricketTeam" ref="IndianCricketTeam"/>
+        <property name="props" ref="jdbc_connection"/>
+    </bean>
+</beans>
