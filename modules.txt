@@ -1,0 +1,6 @@
+1. Dependeny injection
+2. Life cycle methods
+3. Autowiring
+4. Util schema
+5. Stereotype Annotations
+6. Spring bean scope
